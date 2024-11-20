@@ -1,0 +1,13 @@
+# Function to sum even numbers
+def sum_even_numbers(start, end):
+    total = 0
+    for num in range(start, end + 1):  # Loop from start to end (inclusive)
+        if num % 2 == 0:  # Check if the number is even
+            total += num  # Add the even number to total
+    return total
+
+# Example usage:
+start = 1
+end = 10
+result = sum_even_numbers(start, end)
+print(f"Sum of even numbers between {start} and {end} is: {result}")
